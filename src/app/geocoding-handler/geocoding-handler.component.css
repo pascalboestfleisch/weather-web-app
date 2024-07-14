@@ -1,0 +1,8 @@
+div {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+}

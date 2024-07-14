@@ -1,0 +1,12 @@
+<!-- geocoding.component.html -->
+<div>
+    <textarea [(ngModel)]="cityName" placeholder="Enter city name" rows="1"></textarea>
+    <button (click)="searchCity()">Search</button>
+  </div>
+  
+  <div *ngIf="geoData">
+    <p>City: {{ geoData.name }}</p>
+    <p>Latitude: {{ geoData.latitude }}</p>
+    <p>Longitude: {{ geoData.longitude }}</p>
+  </div>
+  
