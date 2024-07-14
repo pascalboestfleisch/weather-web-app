@@ -3,12 +3,12 @@
 </div>
 
 <div>
-    <textarea [(ngModel)]="cityName" placeholder="Enter city name" rows="1"></textarea>
+    <input type="text" [(ngModel)]="cityName" placeholder="Enter city name" rows="1" (keyup.enter)="searchCity()">
     <button (click)="searchCity()">Search</button>
   </div>
   
   <div *ngIf="geoData">
-    <p>City: {{ geoData.name }}</p>
+    <h2>{{ geoData.name }}</h2>
   </div>
 
   <div *ngIf="weatherData">

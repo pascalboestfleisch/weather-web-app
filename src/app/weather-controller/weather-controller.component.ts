@@ -11,18 +11,16 @@ import { WeatherService } from '../weather.service';
 })
 export class WeatherControllerComponent implements OnInit {
   weatherData: any;
-  latitude: number = 0; // Initialize with default values
+  latitude: number = 0;
   longitude: number = 0;
 
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    // Assume latitude and longitude are set before calling fetchWeather
     this.fetchWeather();
   }
 
   fetchWeather(): void {
-    // Call fetchWeather with latitude and longitude
     this.weatherService.fetchWeather(this.latitude, this.longitude).subscribe(data => {
       this.weatherData = data;
     });
