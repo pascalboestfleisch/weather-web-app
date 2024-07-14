@@ -1,6 +1,6 @@
 # WeatherDate
 
-This project was generated with Angular.
+This project was made with Angular
 
 ## Minihackathon
 
@@ -8,7 +8,7 @@ First challenge of Kevin Chromiks Minihackathon, starting 14th of July.
 https://www.youtube.com/@KevinChromik
 https://minihackathon.de/gdge/
 
-## Requirement
+## Requirements
 **usage of Open-Meteo API**
 
 ## Development server
