@@ -6,3 +6,7 @@ textarea {
     resize: none;
     border-radius: 10px;
 }
+
+.image {
+    margin-bottom: 1em;
+}

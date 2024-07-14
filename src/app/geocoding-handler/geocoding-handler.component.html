@@ -1,4 +1,7 @@
-<!-- geocoding.component.html -->
+<div class="image">
+  <img src="/assets/weather-app.png" alt="weather" width="350px" height="350px">
+</div>
+
 <div>
     <textarea [(ngModel)]="cityName" placeholder="Enter city name" rows="1"></textarea>
     <button (click)="searchCity()">Search</button>
@@ -6,7 +9,11 @@
   
   <div *ngIf="geoData">
     <p>City: {{ geoData.name }}</p>
-    <p>Latitude: {{ geoData.latitude }}</p>
-    <p>Longitude: {{ geoData.longitude }}</p>
   </div>
+
+  <div *ngIf="weatherData">
+    <h2>Current Weather</h2>
+    <p>Time: {{ weatherData.current.time | date: 'short' }}</p>
+    <p>Temperature: {{ weatherData.current.temperature }}°C</p>
+    
   
